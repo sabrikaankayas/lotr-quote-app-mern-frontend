@@ -1,0 +1,53 @@
+.quiz {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+}
+.quiz__container {
+    position: absolute;
+    top:50%;
+    left:50%;
+    transform: translate(-50%, -50%);
+    width: 70%;
+    height: 70%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.quiz__characters {
+    display: flex;
+    flex: 1
+}
+.quiz__characters div {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;   
+    border: 1px solid;
+}
+.quiz__characters div:first-child {
+    color: red
+}
+.quiz__dialog {
+    font-size: 1.5rem;
+    padding: 1rem;
+    text-align: center;
+}
+.first-right {
+    transform: translateX(100%);
+}
+.first-right2 {
+    transform: translateX(200%);
+} 
+.second-right {
+    transform: translateX(100%);
+}
+.second-left {
+    transform: translateX(-100%);
+}
+.third-left {
+    transform: translateX(-100%);
+}
+.third-left2 {
+    transform: translateX(-200%);
+}
