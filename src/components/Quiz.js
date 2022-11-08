@@ -226,7 +226,6 @@ const Home = () => {
             return toast.error("Name field cannot be longer than 18 characters.")
         }
         try{
-            console.log(formData)
             await axios.post(`${process.env.REACT_APP_SERVER_URL}/api/scores`, formData)
             setScoreBoard(true)
         }catch(error){
@@ -236,7 +235,6 @@ const Home = () => {
 
     const playerNameChange = (e) => {
         setFormData({...formData, name: e.target.value})
-        console.log(formData)
     }
 
 
